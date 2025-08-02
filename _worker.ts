@@ -9,7 +9,7 @@ app.get('/api', (c) => {
 
 // Fallback to let Cloudflare Pages handle static assets
 app.get('*', (c) => {
-  return c.env.ASSETS.fetch(c.req);
+  return c.env.ASSETS.fetch(c.req.raw);
 });
 
 export default app;
