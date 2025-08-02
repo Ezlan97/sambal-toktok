@@ -1,14 +1,15 @@
 import { Hono } from 'hono';
-import { serveStatic } from 'hono/cloudflare-workers';
 
 const app = new Hono();
 
-// API routes
+// Handle our API routes
 app.get('/api', (c) => {
   return c.text('Hello from Hono!');
 });
 
-// Serve static assets from the root
-app.use('/*', serveStatic({ root: './' }))
+// Fallback to let Cloudflare Pages handle static assets
+app.get('*', (c) => {
+  return c.env.ASSETS.fetch(c.req);
+});
 
 export default app;
