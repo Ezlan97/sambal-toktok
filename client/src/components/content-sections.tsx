@@ -6,7 +6,7 @@ import onionsImage from "@assets/image_1754094963146.png";
 import chiliesImage from "@assets/image_1754094988970.png";
 import oilImage from "@assets/image_1754095002383.png";
 import tamarindImage from "@assets/image_1754095014567.png";
-import   from "@assets/about.png";
+import aboutImage from "@assets/about.png";
 
 export function ContentSections() {
   const { t } = useLanguage();
