@@ -6,6 +6,7 @@ import onionsImage from "@assets/image_1754094963146.png";
 import chiliesImage from "@assets/image_1754094988970.png";
 import oilImage from "@assets/image_1754095002383.png";
 import tamarindImage from "@assets/image_1754095014567.png";
+import   from "@assets/about.png";
 
 export function ContentSections() {
   const { t } = useLanguage();
@@ -45,7 +46,7 @@ function WhatIsSection() {
             className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
           >
             <img 
-              src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={aboutImage} 
               alt="Traditional Malaysian cooking" 
               className="w-full rounded-2xl shadow-lg"
             />
