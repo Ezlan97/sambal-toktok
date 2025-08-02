@@ -7,6 +7,8 @@ import chiliesImage from "@assets/image_1754094988970.png";
 import oilImage from "@assets/image_1754095002383.png";
 import tamarindImage from "@assets/image_1754095014567.png";
 import aboutImage from "@assets/about.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPepperHot } from '@fortawesome/free-solid-svg-icons';
 
 export function ContentSections() {
   const { t } = useLanguage();
@@ -152,11 +154,11 @@ function SpiceAndStorageSection() {
               <div className="flex items-center gap-2">
                 <span className="text-sm">{t.spiceLevel}</span>
                 <div className="flex">
-                  <i className="fas fa-pepper-hot text-orange-500"></i>
-                  <i className="fas fa-pepper-hot text-orange-500"></i>
-                  <i className="fas fa-pepper-hot text-gray-300"></i>
-                  <i className="fas fa-pepper-hot text-gray-300"></i>
-                  <i className="fas fa-pepper-hot text-gray-300"></i>
+                    <FontAwesomeIcon icon={faPepperHot} className="text-orange-500" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-orange-500" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
                 </div>
               </div>
             </div>
