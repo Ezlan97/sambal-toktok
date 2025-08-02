@@ -1,12 +1,9 @@
-import express from 'express';
-import serverless from 'serverless-http';
+import { Hono } from 'hono';
 
-const app = express();
+const app = new Hono();
 
-app.get('/api', (req, res) => {
-  res.send('Hello from Express!');
+app.get('/api', (c) => {
+  return c.text('Hello from Hono!');
 });
 
-export default {
-  fetch: serverless(app),
-};
+export default app;
