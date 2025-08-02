@@ -1,5 +1,0 @@
-name = "sambal-toktok"
-pages_build_output_dir = "dist"
-
-compatibility_date = "2025-08-02"
-compatibility_flags = [ "nodejs_compat" ]
