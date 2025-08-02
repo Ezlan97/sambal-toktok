@@ -26,7 +26,7 @@ function WhatIsSection() {
   const { elementRef: imageRef, isVisible: imageVisible } = useScrollReveal();
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" data-section="about">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div 

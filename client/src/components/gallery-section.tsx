@@ -2,6 +2,8 @@ import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import { Button } from '@/components/ui/button';
 import riceImage from "@assets/WhatsApp Image 2025-08-02 at 08.04.12_04848073_1754093073534.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export function GallerySection() {
   const { t } = useLanguage();
@@ -115,7 +117,7 @@ function CTASection() {
             onClick={handleOrderClick}
             className="inline-flex items-center gap-3 bg-white hover:bg-gray-50 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg"
           >
-            <i className="fab fa-whatsapp text-2xl text-green-500"></i>
+            <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-green-500" />
             <span className="text-green-600">{t.orderWhatsapp}</span>
           </Button>
         </div>
@@ -128,17 +130,18 @@ function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gray-800 text-white py-8 px-4">
+    <footer className="bg-brand-pink text-white py-8 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <div className="mb-4">
-          <p className="text-sm text-gray-300">
+          <p className="text-sm text-pink-100">
             {t.footerText}
           </p>
         </div>
-        <div className="text-xs text-gray-400">
+        <div className="text-xs text-pink-200">
           <p>{t.copyright}</p>
         </div>
       </div>
     </footer>
   );
 }
+
