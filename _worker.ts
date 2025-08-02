@@ -7,4 +7,6 @@ app.get('/api', (req, res) => {
   res.send('Hello from Express!');
 });
 
-export const onRequest = serverless(app);
+export default {
+  fetch: serverless(app),
+};
