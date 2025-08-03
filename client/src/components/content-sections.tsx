@@ -14,7 +14,7 @@ export function ContentSections() {
   const { t } = useLanguage();
 
   return (
-    <main className="py-20">
+    <main>
       <WhatIsSection />
       <IngredientsSection />
       <SpiceAndStorageSection />
