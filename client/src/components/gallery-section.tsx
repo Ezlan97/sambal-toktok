@@ -55,7 +55,7 @@ function GalleryDisplay() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-pink-50/60">
+    <section className="py-16 px-4 bg-pink-50/100">
       <div className="max-w-6xl mx-auto">
         <div 
           ref={titleRef}

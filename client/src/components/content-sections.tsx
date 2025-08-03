@@ -29,7 +29,7 @@ function WhatIsSection() {
   const { elementRef: imageRef, isVisible: imageVisible } = useScrollReveal();
 
   return (
-    <section className="py-16 px-4 bg-pink-50/60" data-section="about">
+    <section className="py-16 px-4 bg-pink-50/100" data-section="about">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div 
@@ -92,7 +92,7 @@ function IngredientsSection() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-pink-50/30">
+    <section className="py-16 px-4 bg-pink-50/60">
       <div className="max-w-6xl mx-auto">
         <div 
           ref={titleRef}
@@ -136,7 +136,7 @@ function SpiceAndStorageSection() {
   const { elementRef: storageRef, isVisible: storageVisible } = useScrollReveal();
 
   return (
-    <section className="py-16 px-4 bg-pink-50/60">
+    <section className="py-16 px-4 bg-pink-50/100">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Spice Level */}
@@ -212,7 +212,7 @@ function ServingSuggestionsSection() {
   ];
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4 bg-pink-50/30">
       <div className="max-w-6xl mx-auto">
         <div 
           ref={titleRef}
