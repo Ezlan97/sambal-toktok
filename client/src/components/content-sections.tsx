@@ -29,7 +29,7 @@ function WhatIsSection() {
   const { elementRef: imageRef, isVisible: imageVisible } = useScrollReveal();
 
   return (
-    <section className="py-16 px-4" data-section="about">
+    <section className="py-16 px-4 bg-pink-50/60" data-section="about">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div 
@@ -136,7 +136,7 @@ function SpiceAndStorageSection() {
   const { elementRef: storageRef, isVisible: storageVisible } = useScrollReveal();
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4 bg-pink-50/60">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Spice Level */}
@@ -144,21 +144,21 @@ function SpiceAndStorageSection() {
             ref={spiceRef}
             className={`reveal-on-scroll ${spiceVisible ? 'revealed' : ''}`}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-pink-100">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-pink-200">
               <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
                 {t.spiceLevelTitle}
               </h3>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-6 text-pink-700">
                 {t.spiceLevelDescription}
               </p>
               <div className="flex items-center gap-2">
-                <span className="text-sm">{t.spiceLevel}</span>
+                <span className="text-sm font-semibold text-brand-pink">{t.spiceLevel}</span>
                 <div className="flex">
-                    <FontAwesomeIcon icon={faPepperHot} className="text-orange-500" />
-                    <FontAwesomeIcon icon={faPepperHot} className="text-orange-500" />
-                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
-                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
-                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-500" />
+                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-400" />
+                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-200" />
+                  <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                  <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
                 </div>
               </div>
             </div>
@@ -169,11 +169,11 @@ function SpiceAndStorageSection() {
             ref={storageRef}
             className={`reveal-on-scroll ${storageVisible ? 'revealed' : ''}`}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-pink-100">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-pink-200">
               <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
                 {t.storageTitle}
               </h3>
-              <p className="text-lg">
+              <p className="text-lg text-pink-700">
                 {t.storageDescription}
               </p>
             </div>
@@ -212,7 +212,7 @@ function ServingSuggestionsSection() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-pink-50/30">
+    <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div 
           ref={titleRef}
