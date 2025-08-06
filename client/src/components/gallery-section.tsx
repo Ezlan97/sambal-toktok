@@ -1,3 +1,4 @@
+import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import { Button } from '@/components/ui/button';
@@ -102,25 +103,30 @@ function CTASection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-pink-500 to-orange-500">
-      <div className="max-w-4xl mx-auto text-center text-white">
+    <section 
+      className="py-20 px-4 bg-cover bg-center"
+      style={{ backgroundImage: `url(${batikImage})` }}
+    >
+      <div className="max-w-4xl mx-auto text-center">
         <div 
           ref={elementRef}
           className={`reveal-on-scroll ${isVisible ? 'revealed' : ''}`}
         >
-          <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-6">
-            {t.ctaTitle}
-          </h2>
-          <p className="text-lg md:text-xl mb-8 opacity-90">
-            {t.ctaDescription}
-          </p>
-          <Button
-            onClick={handleOrderClick}
-            className="inline-flex items-center gap-3 bg-white hover:bg-gray-50 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-green-500" />
-            <span className="text-green-600">{t.orderWhatsapp}</span>
-          </Button>
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-lg border-2 border-pink-200">
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-brand-pink mb-6">
+              {t.ctaTitle}
+            </h2>
+            <p className="text-lg md:text-xl text-pink-700 mb-8">
+              {t.ctaDescription}
+            </p>
+            <Button
+              onClick={handleOrderClick}
+              className="inline-flex items-center gap-3 bg-brand-pink hover:bg-brand-pink/90 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
+              <span>{t.orderWhatsapp}</span>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
