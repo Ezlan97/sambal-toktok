@@ -7,6 +7,7 @@ import chiliesImage from "@assets/image_1754094988970.png";
 import oilImage from "@assets/image_1754095002383.png";
 import tamarindImage from "@assets/image_1754095014567.png";
 import aboutImage from "@assets/about.png";
+import allIngredientsImage from "@assets/all-ingredient.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPepperHot } from '@fortawesome/free-solid-svg-icons';
 
@@ -59,76 +60,113 @@ function WhatIsSection() {
   );
 }
 
+// function IngredientsSection() {
+//   const { t } = useLanguage();
+//   const { elementRef: titleRef, isVisible: titleVisible } = useScrollReveal();
+
+//   const ingredients = [
+//     {
+//       src: anchoviesImage,
+//       name: t.anchovy,
+//       alt: "Dried anchovies (ikan bilis)"
+//     },
+//     {
+//       src: onionsImage,
+//       name: t.onions,
+//       alt: "Fresh red onions"
+//     },
+//     {
+//       src: chiliesImage,
+//       name: t.chilies,
+//       alt: "Fresh green and red chilies"
+//     },
+//     {
+//       src: oilImage,
+//       name: t.oil,
+//       alt: "Cooking oil bottle"
+//     },
+//     {
+//       src: tamarindImage,
+//       name: t.tamarind,
+//       alt: "Tamarind pods"
+//     }
+//   ];
+
+//   return (
+//     <section className="py-16 px-4 bg-pink-50/60">
+//       <div className="max-w-6xl mx-auto">
+//         <div 
+//           ref={titleRef}
+//           className={`text-center mb-12 reveal-on-scroll ${titleVisible ? 'revealed' : ''}`}
+//         >
+//           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-brand-pink mb-4">
+//             {t.ingredientsTitle}
+//           </h2>
+//           <p className="text-lg text-brand-text">
+//             {t.ingredientsDescription}
+//           </p>
+//         </div>
+        
+//         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+//           {ingredients.map((ingredient, index) => {
+//             const { elementRef, isVisible } = useScrollReveal();
+//             return (
+//               <div 
+//                 key={index}
+//                 ref={elementRef}
+//                 className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''}`}
+//               >
+//                 <img 
+//                   src={ingredient.src} 
+//                   alt={ingredient.alt} 
+//                   className="w-full aspect-square object-cover rounded-xl shadow-md"
+//                 />
+//                 <p className="text-center mt-2 text-sm font-medium">{ingredient.name}</p>
+//               </div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 function IngredientsSection() {
   const { t } = useLanguage();
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollReveal();
-
-  const ingredients = [
-    {
-      src: anchoviesImage,
-      name: t.anchovy,
-      alt: "Dried anchovies (ikan bilis)"
-    },
-    {
-      src: onionsImage,
-      name: t.onions,
-      alt: "Fresh red onions"
-    },
-    {
-      src: chiliesImage,
-      name: t.chilies,
-      alt: "Fresh green and red chilies"
-    },
-    {
-      src: oilImage,
-      name: t.oil,
-      alt: "Cooking oil bottle"
-    },
-    {
-      src: tamarindImage,
-      name: t.tamarind,
-      alt: "Tamarind pods"
-    }
-  ];
+  const { elementRef: textRef, isVisible: textVisible } = useScrollReveal();
+  const { elementRef: imageRef, isVisible: imageVisible } = useScrollReveal();
 
   return (
     <section className="py-16 px-4 bg-pink-50/60">
       <div className="max-w-6xl mx-auto">
-        <div 
-          ref={titleRef}
-          className={`text-center mb-12 reveal-on-scroll ${titleVisible ? 'revealed' : ''}`}
-        >
-          <h2 className="font-poppins font-bold text-3xl md:text-4xl text-brand-pink mb-4">
-            {t.ingredientsTitle}
-          </h2>
-          <p className="text-lg text-brand-text">
-            {t.ingredientsDescription}
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {ingredients.map((ingredient, index) => {
-            const { elementRef, isVisible } = useScrollReveal();
-            return (
-              <div 
-                key={index}
-                ref={elementRef}
-                className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''}`}
-              >
-                <img 
-                  src={ingredient.src} 
-                  alt={ingredient.alt} 
-                  className="w-full aspect-square object-cover rounded-xl shadow-md"
-                />
-                <p className="text-center mt-2 text-sm font-medium">{ingredient.name}</p>
-              </div>
-            );
-          })}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div
+            ref={imageRef}
+            className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
+          >
+            <img
+              src={allIngredientsImage}
+              alt="All ingredients for Sambal TokTok"
+              className="w-full rounded-2xl shadow-lg"
+            />
+          </div>
+          <div
+            ref={textRef}
+            className={`reveal-on-scroll ${textVisible ? 'revealed' : ''}`}
+          >
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-brand-pink mb-6">
+              {t.ingredientsTitle}
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed text-brand-text mb-6">
+              {t.ingredientsDescription}
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 function SpiceAndStorageSection() {
   const { t } = useLanguage();
