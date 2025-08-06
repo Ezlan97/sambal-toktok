@@ -1,11 +1,6 @@
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import riceImage from "@assets/WhatsApp Image 2025-08-02 at 08.04.12_04848073_1754093073534.jpg";
-import anchoviesImage from "@assets/image_1754094637876.png";
-import onionsImage from "@assets/image_1754094963146.png";
-import chiliesImage from "@assets/image_1754094988970.png";
-import oilImage from "@assets/image_1754095002383.png";
-import tamarindImage from "@assets/image_1754095014567.png";
 import aboutImage from "@assets/about.png";
 import allIngredientsImage from "@assets/all-ingredient.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
