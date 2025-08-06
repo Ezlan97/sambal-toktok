@@ -34,6 +34,7 @@ export function FloatingPouches() {
       {pouches.map((pouch, index) => (
         <div key={index} className={pouch.className}>
           <img 
+            loading="lazy"
             src={pouch.src} 
             alt="Sambal pouch" 
             className={`w-full h-full object-cover rounded-lg shadow-lg transform ${pouch.rotation}`}

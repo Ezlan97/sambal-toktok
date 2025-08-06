@@ -45,6 +45,7 @@ function WhatIsSection() {
             className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
           >
             <img 
+              loading="lazy"
               src={aboutImage} 
               alt="Traditional Malaysian cooking" 
               className="w-full rounded-2xl shadow-lg"
@@ -152,6 +153,7 @@ function IngredientsSection() {
             className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
           >
             <img
+              loading="lazy"
               src={allIngredientsImage}
               alt="All ingredients for Sambal TokTok"
               className="w-full rounded-2xl shadow-lg"
@@ -280,6 +282,7 @@ function ServingSuggestionsSection() {
                 className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''}`}
               >
                 <img 
+                  loading="lazy"
                   src={suggestion.src} 
                   alt={suggestion.alt} 
                   className="w-full aspect-[4/3] object-cover rounded-xl shadow-md"

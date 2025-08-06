@@ -79,6 +79,7 @@ function GalleryDisplay() {
                 className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''} ${item.className}`}
               >
                 <img 
+                  loading="lazy"
                   src={item.src} 
                   alt={item.alt} 
                   className="w-full h-full object-cover rounded-xl shadow-lg"

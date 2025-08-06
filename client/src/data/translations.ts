@@ -44,7 +44,7 @@ export const translations: Translations = {
     // Serving Suggestions
     servingTitle: "Cadangan Hidangan",
     servingDescription:
-      "Sedap dengan nasi🍚, roti🥖, mee🍜, atau sebagai perencah! 🔥",
+      "Sedap dengan nasi🍚, roti🍞, mee🍜, atau sebagai perencah🥘! 🔥",
     withRice: "Dengan Nasi",
     withBread: "Dengan Roti",
     withNoodles: "Dengan Mee",
@@ -100,7 +100,7 @@ export const translations: Translations = {
     // Serving Suggestions
     servingTitle: "Serving Suggestions",
     servingDescription:
-      "Delicious with rice🍚, bread🥖, noodles🍜, or as a condiment! 🔥",
+      "Delicious with rice🍚, bread🥖, noodles🍜, or as a condiment🥘! 🔥",
     withRice: "With Rice",
     withBread: "With Bread",
     withNoodles: "With Noodles",
