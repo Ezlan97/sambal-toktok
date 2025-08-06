@@ -136,16 +136,6 @@ function IngredientsSection() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div
-            ref={imageRef}
-            className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
-          >
-            <img
-              src={allIngredientsImage}
-              alt="All ingredients for Sambal TokTok"
-              className="w-full rounded-2xl shadow-lg"
-            />
-          </div>
-          <div
             ref={textRef}
             className={`reveal-on-scroll ${textVisible ? 'revealed' : ''}`}
           >
@@ -155,6 +145,16 @@ function IngredientsSection() {
             <p className="text-lg md:text-xl leading-relaxed text-brand-text mb-6">
               {t.ingredientsDescription}
             </p>
+          </div>
+          <div
+            ref={imageRef}
+            className={`reveal-on-scroll ${imageVisible ? 'revealed' : ''}`}
+          >
+            <img
+              src={allIngredientsImage}
+              alt="All ingredients for Sambal TokTok"
+              className="w-full rounded-2xl shadow-lg"
+            />
           </div>
         </div>
       </div>
