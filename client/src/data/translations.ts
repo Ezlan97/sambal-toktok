@@ -21,12 +21,12 @@ export const translations: Translations = {
     // What is Sambal TokTok
     whatIsTitle: "Apa itu Sambal TokTok?",
     whatIsDescription:
-      "🔥 Sambal TokTok adalah sambal bilis tradisional 🐟, dimasak perlahan 🕰️ selama beberapa jam untuk rasa pedas 🌶️, manis 🍯, dan masam 🤞 yang padu! 😋🔥",
+      "🔥 Sambal TokTok merupakan sambal bilis tradisional 🐟 yang dimasak secara perlahan 🕰️ selama beberapa jam bagi mengekalkan rasa asli dan berkualiti. Ia menggabungkan rasa pedas 🌶️, manis 🧅 dan masam 🫰🏼 secara seimbang, menghasilkan cita rasa yang kaya dan menyelerakan 🤤",
 
     // Ingredients
     ingredientsTitle: "Bahan-bahan yang digunakan?",
     ingredientsDescription:
-      "🐟 Ikan bilis, 🧅 bawang, 🛢️ minyak masak, 🌶️ cili, 🤞 asam jawa. Tanpa bahan pengawet 🌿😊",
+      "🐟 Ikan bilis, 🧅 bawang, 🛢️ minyak masak, 🌶️ cili, 🫰🏼 asam jawa. Tanpa bahan pengawet 🌿😊",
     anchovy: "Ikan Bilis",
     onions: "Bawang",
     chilies: "Cili",
@@ -77,12 +77,12 @@ export const translations: Translations = {
     // What is Sambal TokTok
     whatIsTitle: "What is Sambal TokTok?",
     whatIsDescription:
-      "🔥 Sambal TokTok is traditional anchovy sambal 🐟, slowly cooked 🕰️ for hours to achieve the perfect balance of spicy 🌶️, sweet 🍯, and tangy 🤞 flavors! 😋🔥",
+      "🔥 Sambal TokTok is traditional anchovy sambal 🐟, slowly cooked 🕰️ for hours to achieve the perfect balance of spicy 🌶️, sweet 🧅, and tangy 🫰🏼 flavors! 😋🔥",
 
     // Ingredients
     ingredientsTitle: "What ingredients are used?",
     ingredientsDescription:
-      "🐟 Anchovies, 🧅 onions, 🛢️ cooking oil, 🌶️ chilies, 🤞 tamarind. No preservatives 🌿😊",
+      "🐟 Anchovies, 🧅 onions, 🛢️ cooking oil, 🌶️ chilies, 🫰🏼 tamarind. No preservatives 🌿😊",
     anchovy: "Anchovies",
     onions: "Onions",
     chilies: "Chilies",
