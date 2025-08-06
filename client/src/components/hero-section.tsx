@@ -1,3 +1,4 @@
+import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import { FloatingPouches } from './floating-pouches';
@@ -25,7 +26,10 @@ export function HeroSection() {
           ref={logoRef}
           className={`mb-8 reveal-on-scroll ${logoVisible ? 'revealed' : ''}`}
         >
-          <div className="inline-block p-8 bg-white rounded-3xl shadow-2xl">
+          <div 
+            className="inline-block p-8 rounded-3xl shadow-[0_8px_40px_0_rgba(236,72,153,0.25)] bg-cover bg-center"
+            style={{ backgroundImage: `url(${batikImage})` }}
+          >
             <div className="w-48 h-48 md:w-64 md:h-64 mx-auto bg-brand-pink-logo rounded-2xl flex items-center justify-center">
               <div className="text-white font-poppins font-bold text-center">
                 <div className="text-3xl md:text-4xl">Sambal</div>

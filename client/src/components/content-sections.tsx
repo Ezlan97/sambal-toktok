@@ -1,3 +1,4 @@
+import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import riceImage from "@assets/WhatsApp Image 2025-08-02 at 08.04.12_04848073_1754093073534.jpg";
@@ -177,21 +178,26 @@ function SpiceAndStorageSection() {
             ref={spiceRef}
             className={`reveal-on-scroll ${spiceVisible ? 'revealed' : ''}`}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-pink-200">
-              <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
-                {t.spiceLevelTitle}
-              </h3>
-              <p className="text-lg mb-6 text-pink-700">
-                {t.spiceLevelDescription}
-              </p>
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-brand-pink">{t.spiceLevel}</span>
-                <div className="flex">
-                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-500" />
-                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-400" />
-                  <FontAwesomeIcon icon={faPepperHot} className="text-pink-200" />
-                  <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
-                  <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+            <div 
+              className="rounded-2xl p-8 shadow-lg border-2 border-pink-200 bg-cover bg-center"
+              style={{ backgroundImage: `url(${batikImage})` }}
+            >
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6">
+                <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
+                  {t.spiceLevelTitle}
+                </h3>
+                <p className="text-lg mb-6 text-pink-700">
+                  {t.spiceLevelDescription}
+                </p>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-semibold text-brand-pink">{t.spiceLevel}</span>
+                  <div className="flex">
+                    <FontAwesomeIcon icon={faPepperHot} className="text-pink-500" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-pink-400" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-pink-200" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                    <FontAwesomeIcon icon={faPepperHot} className="text-gray-300" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,13 +208,18 @@ function SpiceAndStorageSection() {
             ref={storageRef}
             className={`reveal-on-scroll ${storageVisible ? 'revealed' : ''}`}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-pink-200">
-              <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
-                {t.storageTitle}
-              </h3>
-              <p className="text-lg text-pink-700">
-                {t.storageDescription}
-              </p>
+            <div 
+              className="rounded-2xl p-8 shadow-lg border-2 border-pink-200 bg-cover bg-center"
+              style={{ backgroundImage: `url(${batikImage})` }}
+            >
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6">
+                <h3 className="font-poppins font-bold text-2xl text-brand-pink mb-4">
+                  {t.storageTitle}
+                </h3>
+                <p className="text-lg text-pink-700">
+                  {t.storageDescription}
+                </p>
+              </div>
             </div>
           </div>
         </div>
