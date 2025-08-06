@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
@@ -21,37 +22,32 @@ export function GallerySection() {
 function GalleryDisplay() {
   const { t } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollReveal();
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const galleryItems = [
     {
       src: riceImage,
-      alt: "Sambal TokTok with rice meal",
-      className: "col-span-1 md:col-span-2 lg:col-span-1 aspect-[5/6]"
+      alt: t.galleryItem1,
     },
     {
       src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
-      alt: "Traditional Asian condiments",
-      className: "aspect-[4/5]"
+      alt: t.galleryItem2,
     },
     {
       src: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
-      alt: "Food packaging lifestyle",
-      className: "aspect-[4/5]"
+      alt: t.galleryItem3,
     },
     {
       src: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Sambal preparation",
-      className: "aspect-[4/3]"
+      alt: t.galleryItem4,
     },
     {
       src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Malaysian family cooking together",
-      className: "aspect-[4/3]"
+      alt: t.galleryItem5,
     },
     {
       src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Product packaging lifestyle",
-      className: "aspect-[4/3]"
+      alt: t.galleryItem6,
     }
   ];
 
@@ -70,24 +66,23 @@ function GalleryDisplay() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryItems.map((item, index) => {
-            const { elementRef, isVisible } = useScrollReveal();
-            return (
-              <div 
-                key={index}
-                ref={elementRef}
-                className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''} ${item.className}`}
-              >
-                <img 
-                  loading="lazy"
-                  src={item.src} 
-                  alt={item.alt} 
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
-                />
+        <div className="flex flex-col md:flex-row h-[500px] gap-2">
+          {galleryItems.map((item, index) => (
+            <div
+              key={index}
+              className={`relative flex-1 overflow-hidden rounded-xl shadow-lg transition-all duration-500 ease-in-out cursor-pointer group
+                ${activeIndex === index ? 'flex-[3]' : 'flex-[1]'}`}
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(0)} // Reset on mouse leave
+              style={{ backgroundImage: `url(${item.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-500 flex items-end p-4">
+                <p className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  {item.alt}
+                </p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -135,6 +130,7 @@ function CTASection() {
 
 function Footer() {
   const { t } = useLanguage();
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-brand-pink text-white py-8 px-4">
@@ -145,7 +141,7 @@ function Footer() {
           </p>
         </div>
         <div className="text-xs text-pink-200">
-          <p>{t.copyright}</p>
+          <p>&copy; {year} {t.copyright}</p>
         </div>
       </div>
     </footer>

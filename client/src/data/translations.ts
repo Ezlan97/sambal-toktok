@@ -53,6 +53,12 @@ export const translations: Translations = {
     // Gallery
     galleryTitle: "Galeri",
     galleryDescription: "Lihat Sambal TokTok dalam pelbagai situasi",
+    galleryItem1: "Sambal TokTok dengan hidangan nasi",
+    galleryItem2: "Perencah tradisional Asia",
+    galleryItem3: "Gaya hidup pembungkusan makanan",
+    galleryItem4: "Penyediaan sambal",
+    galleryItem5: "Keluarga Malaysia memasak bersama",
+    galleryItem6: "Gaya hidup pembungkusan produk",
 
     // CTA
     ctaTitle: "Rasai Warisan Nenek Hari Ini!",
@@ -62,7 +68,7 @@ export const translations: Translations = {
 
     // Footer
     footerText: "Dibina dengan ❤️ untuk sambal tradisional",
-    copyright: "© 2025 Sambal TokTok. Semua hak terpelihara.",
+    copyright: "Sambal Tok.Tok Semua hak terpelihara.",
   },
   en: {
     // Header
@@ -109,6 +115,12 @@ export const translations: Translations = {
     // Gallery
     galleryTitle: "Gallery",
     galleryDescription: "See Sambal TokTok in various settings",
+    galleryItem1: "Sambal TokTok with rice meal",
+    galleryItem2: "Traditional Asian condiments",
+    galleryItem3: "Food packaging lifestyle",
+    galleryItem4: "Sambal preparation",
+    galleryItem5: "Malaysian family cooking together",
+    galleryItem6: "Product packaging lifestyle",
 
     // CTA
     ctaTitle: "Taste Grandmother's Heritage Today!",
@@ -118,6 +130,6 @@ export const translations: Translations = {
 
     // Footer
     footerText: "Built with ❤️ for the love of traditional sambal",
-    copyright: "© 2025 Sambal TokTok. All rights reserved.",
+    copyright: "Sambal Tok.Tok All rights reserved.",
   },
 };
