@@ -1,7 +1,7 @@
 import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
-import riceImage from "@assets/WhatsApp Image 2025-08-02 at 08.04.12_04848073_1754093073534.jpg";
+import riceImage from "@assets/makan_dengan_nasi.jpg";
 import aboutImage from "@assets/about.png";
 import allIngredientsImage from "@assets/all-ingredient.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +15,7 @@ export function ContentSections() {
       <WhatIsSection />
       <IngredientsSection />
       <SpiceAndStorageSection />
-      <ServingSuggestionsSection />
+      {/* <ServingSuggestionsSection /> */}
     </main>
   );
 }
@@ -56,77 +56,6 @@ function WhatIsSection() {
     </section>
   );
 }
-
-// function IngredientsSection() {
-//   const { t } = useLanguage();
-//   const { elementRef: titleRef, isVisible: titleVisible } = useScrollReveal();
-
-//   const ingredients = [
-//     {
-//       src: anchoviesImage,
-//       name: t.anchovy,
-//       alt: "Dried anchovies (ikan bilis)"
-//     },
-//     {
-//       src: onionsImage,
-//       name: t.onions,
-//       alt: "Fresh red onions"
-//     },
-//     {
-//       src: chiliesImage,
-//       name: t.chilies,
-//       alt: "Fresh green and red chilies"
-//     },
-//     {
-//       src: oilImage,
-//       name: t.oil,
-//       alt: "Cooking oil bottle"
-//     },
-//     {
-//       src: tamarindImage,
-//       name: t.tamarind,
-//       alt: "Tamarind pods"
-//     }
-//   ];
-
-//   return (
-//     <section className="py-16 px-4 bg-pink-50/60">
-//       <div className="max-w-6xl mx-auto">
-//         <div 
-//           ref={titleRef}
-//           className={`text-center mb-12 reveal-on-scroll ${titleVisible ? 'revealed' : ''}`}
-//         >
-//           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-brand-pink mb-4">
-//             {t.ingredientsTitle}
-//           </h2>
-//           <p className="text-lg text-brand-text">
-//             {t.ingredientsDescription}
-//           </p>
-//         </div>
-        
-//         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-//           {ingredients.map((ingredient, index) => {
-//             const { elementRef, isVisible } = useScrollReveal();
-//             return (
-//               <div 
-//                 key={index}
-//                 ref={elementRef}
-//                 className={`reveal-on-scroll gallery-item ${isVisible ? 'revealed' : ''}`}
-//               >
-//                 <img 
-//                   src={ingredient.src} 
-//                   alt={ingredient.alt} 
-//                   className="w-full aspect-square object-cover rounded-xl shadow-md"
-//                 />
-//                 <p className="text-center mt-2 text-sm font-medium">{ingredient.name}</p>
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 function IngredientsSection() {
   const { t } = useLanguage();

@@ -55,7 +55,7 @@ export const translations: Translations = {
     galleryDescription: "Lihat Sambal TokTok dalam pelbagai situasi",
     galleryItem1: "Sambal TokTok dengan hidangan nasi",
     galleryItem2: "Perencah tradisional Asia",
-    galleryItem3: "Gaya hidup pembungkusan makanan",
+    galleryItem3: "Sedia untuk dihidang",
     galleryItem4: "Penyediaan sambal",
     galleryItem5: "Keluarga Malaysia memasak bersama",
     galleryItem6: "Gaya hidup pembungkusan produk",

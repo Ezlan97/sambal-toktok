@@ -3,7 +3,9 @@ import batikImage from "@assets/batik.png";
 import { useLanguage } from '@/hooks/use-language';
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import { Button } from '@/components/ui/button';
-import riceImage from "@assets/WhatsApp Image 2025-08-02 at 08.04.12_04848073_1754093073534.jpg";
+import riceImage from "@assets/makan_dengan_nasi.jpg";
+import galleryImage2 from "@assets/gallery_2.jpeg";
+import galleryImage3 from "@assets/gallery_3.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
@@ -30,25 +32,25 @@ function GalleryDisplay() {
       alt: t.galleryItem1,
     },
     {
-      src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
+      src: galleryImage2,
       alt: t.galleryItem2,
     },
     {
-      src: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
+      src: galleryImage3,
       alt: t.galleryItem3,
     },
-    {
-      src: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: t.galleryItem4,
-    },
-    {
-      src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: t.galleryItem5,
-    },
-    {
-      src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: t.galleryItem6,
-    }
+    // {
+    //   src: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    //   alt: t.galleryItem4,
+    // },
+    // {
+    //   src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    //   alt: t.galleryItem5,
+    // },
+    // {
+    //   src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    //   alt: t.galleryItem6,
+    // }
   ];
 
   return (
