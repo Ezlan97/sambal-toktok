@@ -56,8 +56,8 @@ export const translations: Translations = {
     galleryItem1: "Sambal TokTok dengan hidangan nasi",
     galleryItem2: "Perencah tradisional Asia",
     galleryItem3: "Sedia untuk dihidang",
-    galleryItem4: "Penyediaan sambal",
-    galleryItem5: "Keluarga Malaysia memasak bersama",
+    galleryItem4: "Mudah dibawa kemana-mana sahaja",
+    galleryItem5: "Sesuai dibawa berkelah",
     galleryItem6: "Gaya hidup pembungkusan produk",
 
     // CTA
