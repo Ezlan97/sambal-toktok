@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button';
 import riceImage from "@assets/makan_dengan_nasi.jpg";
 import galleryImage2 from "@assets/gallery_2.jpeg";
 import galleryImage3 from "@assets/gallery_3.jpeg";
+import galleryImage4 from "@assets/gallery_4.jpeg";
+import galleryImage5 from "@assets/gallery_5.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
@@ -39,14 +41,14 @@ function GalleryDisplay() {
       src: galleryImage3,
       alt: t.galleryItem3,
     },
-    // {
-    //   src: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-    //   alt: t.galleryItem4,
-    // },
-    // {
-    //   src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-    //   alt: t.galleryItem5,
-    // },
+    {
+      src: galleryImage4,
+      alt: t.galleryItem4,
+    },
+    {
+      src: galleryImage5,
+      alt: t.galleryItem5,
+    },
     // {
     //   src: "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
     //   alt: t.galleryItem6,
